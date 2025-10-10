@@ -44,14 +44,11 @@
         text-align: center;
         padding: 15px !important;
         color: var(--accent-color) !important;
-       
     }
     
     .nav-link.active::after {
         display: none;
     }
-    
-   
     
     .contact-btn {
         margin: 0px 0 5px;
@@ -60,5 +57,40 @@
         color: var(--text-light) !important;
         border-bottom: none !important;
         background-color: var(--hover-color);
+    }
+    
+    /* Banner 响应式样式 */
+    .banner-content h1 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner-content h1 {
+        font-size: 2rem;
+    }
+    
+    
+    
+    .banner-buttons {
+        flex-direction: column;
+        gap: 15px;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .home_banner {
+        height: 70vh;
+    }
+    
+    .banner-content h1 {
+        font-size: 1.75rem;
     }
 }
