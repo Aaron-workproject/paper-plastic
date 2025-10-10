@@ -1,0 +1,49 @@
+/* 响应式样式 */
+@media (max-width: 576px) {
+    .top-header .col-md-7, .top-header .col-md-5 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 767px) {
+    .top-header .row {
+        text-align: center;
+    }
+    
+    .top-header .col-md-5 {
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .top-header .contact-info {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background-color: var(--accent-color);
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 15px;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .nav-item {
+        margin: 8px 0;
+    }
+    
+    .nav-link {
+        display: block;
+        text-align: center;
+        padding: 10px !important;
+    }
+    
+    .nav-link.active::after {
+        display: none;
+    }
+    
+    
+   
+}
