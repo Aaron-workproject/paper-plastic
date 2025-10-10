@@ -1,26 +1,4 @@
 /* 响应式样式 */
-@media (max-width: 576px) {
-    .top-header .col-md-7, .top-header .col-md-5 {
-        font-size: 12px;
-    }
-}
-
-@media (max-width: 767px) {
-    .top-header .row {
-        text-align: center;
-    }
-    
-    .top-header .col-md-5 {
-        text-align: center;
-        margin-top: 5px;
-    }
-    
-    .top-header .contact-info {
-        display: inline-block;
-        margin: 5px 10px;
-    }
-}
-
 @media (max-width: 991.98px) {
     .navbar-collapse {
         background-color: #ffffff;
@@ -63,14 +41,34 @@
     .banner-content h1 {
         font-size: 2.5rem;
     }
-}
 
+    .industry_trends {
+        padding: 60px 0;
+    }
+    
+    .trend_content .section_title {
+        font-size: 2.4rem;
+    }
+}
 @media (max-width: 767px) {
+    .top-header .row {
+        text-align: center;
+    }
+    
+    .top-header .col-md-5 {
+        text-align: center;
+        margin-top: 5px;
+    }
+    
+    .top-header .contact-info {
+        display: inline-block;
+        margin: 5px 10px;
+    }
+
+    
     .banner-content h1 {
         font-size: 2rem;
     }
-    
-    
     
     .banner-buttons {
         flex-direction: column;
@@ -83,14 +81,40 @@
         padding: 10px 20px;
         font-size: 0.9rem;
     }
+    
+    .trend_content {
+        margin-bottom: 30px;
+    }
 }
 
+
+
+
+
+
+
 @media (max-width: 576px) {
+    .top-header .col-md-7, .top-header .col-md-5 {
+        font-size: 12px;
+    }
     .home_banner {
         height: 70vh;
     }
     
     .banner-content h1 {
         font-size: 1.75rem;
+    }
+    
+    .industry_trends {
+        padding: 50px 0;
+    }
+    
+    .trend_content .section_title {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+    }
+    
+    .trend_description {
+        font-size: 1rem;
     }
 }
