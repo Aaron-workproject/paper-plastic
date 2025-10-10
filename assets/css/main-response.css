@@ -23,11 +23,16 @@
 
 @media (max-width: 991.98px) {
     .navbar-collapse {
-        background-color: var(--accent-color);
-        padding: 20px;
-        border-radius: 5px;
-        margin-top: 15px;
-        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        background-color: #ffffff;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: 1000;
+    }
+    
+    .navbar-collapse .container {
+        padding: 0 20px;
     }
     
     .nav-item {
@@ -37,13 +42,23 @@
     .nav-link {
         display: block;
         text-align: center;
-        padding: 10px !important;
+        padding: 15px !important;
+        color: var(--accent-color) !important;
+       
     }
     
     .nav-link.active::after {
         display: none;
     }
     
-    
    
+    
+    .contact-btn {
+        margin: 0px 0 5px;
+        display: block;
+        text-align: center;
+        color: var(--text-light) !important;
+        border-bottom: none !important;
+        background-color: var(--hover-color);
+    }
 }

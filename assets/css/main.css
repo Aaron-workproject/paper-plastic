@@ -10,7 +10,7 @@
       --text-light: #ffffff;
       --accent-color: #77bd5a;
       --hover-color: #f6ab00;
-      --contact-btn: #f6ab00;
+    
       
       /* 字体系统 */
       --primary-font: 'Roboto', 'Noto Sans SC', sans-serif;  /* 主字体 */
@@ -112,7 +112,7 @@ a:hover{
 }
 
 .contact-btn {
-    background-color: var(--contact-btn);
+    background-color: var(--hover-color);
     padding: 10px 20px !important;
     border-radius: 4px;
     color: var(--text-light) !important;
@@ -120,7 +120,6 @@ a:hover{
 }
 
 .contact-btn:hover {
-    opacity: 0.9;
     color: var(--text-light) !important;
 }
 
