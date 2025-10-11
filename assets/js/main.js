@@ -133,4 +133,27 @@ document.addEventListener('DOMContentLoaded', function() {
             container.scrollLeft = scrollLeft - walk;
         });
     });
+
+    // 返回顶部按钮功能
+    const backToTopButton = document.getElementById('backToTop');
+    
+    if (backToTopButton) {
+        // 监听滚动事件，显示/隐藏按钮
+        window.addEventListener('scroll', function() {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.add('show');
+            } else {
+                backToTopButton.classList.remove('show');
+            }
+        });
+        
+        // 点击按钮返回顶部
+        backToTopButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
 });
