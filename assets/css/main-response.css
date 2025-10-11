@@ -45,11 +45,78 @@
     .industry_trends {
         padding: 60px 0;
     }
+
+    .industry_trends::before {
+        width: 350px;
+        height: 350px;
+        top: -30%;
+        right: -15%;
+    }
+
+    .industry_trends::after {
+        width: 300px;
+        height: 300px;
+        bottom: -20%;
+        left: -10%;
+    }
     
     .trend_content .section_title {
         font-size: 2.4rem;
     }
-    
+
+    /* 应用场景展示响应式 */
+    .application_showcase {
+        padding: 60px 0;
+    }
+
+    .applications-title {
+        font-size: 2.4rem;
+    }
+
+    .applications-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .app-card {
+        height: 260px;
+    }
+
+    .app-card-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .app-card-icon i {
+        font-size: 2.5rem;
+    }
+
+    .app-card-title {
+        font-size: 1.3rem;
+    }
+
+    .app-card-hover {
+        padding: 30px 25px;
+    }
+
+    .app-hover-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 15px;
+    }
+
+    .app-hover-icon i {
+        font-size: 2.2rem;
+    }
+
+    .app-hover-title {
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+    }
+
+    .app-hover-description {
+        font-size: 0.95rem;
+    }
+     
     /* 纸塑回收解决方案响应式 */
 
     
@@ -128,6 +195,20 @@
     .industry_trends {
         padding: 50px 0;
     }
+
+    .industry_trends::before {
+        width: 250px;
+        height: 250px;
+        top: -20%;
+        right: -20%;
+    }
+
+    .industry_trends::after {
+        width: 200px;
+        height: 200px;
+        bottom: -15%;
+        left: -15%;
+    }
     
     .trend_content .section_title {
         font-size: 1.8rem;
@@ -136,6 +217,62 @@
     
     .trend_description {
         font-size: 1rem;
+    }
+
+    /* 应用场景展示响应式 - 小屏幕 */
+    .application_showcase {
+        padding: 50px 0;
+    }
+
+    .applications-title {
+        font-size: 2rem;
+    }
+
+    .applications-subtitle {
+        font-size: 1rem;
+    }
+
+    .app-card {
+        height: 240px;
+    }
+
+    .app-card-icon {
+        width: 55px;
+        height: 55px;
+    }
+
+    .app-card-icon i {
+        font-size: 2.2rem;
+    }
+
+    .app-card-title {
+        font-size: 1.2rem;
+    }
+
+    .app-card-hover {
+        padding: 25px 20px;
+    }
+
+    .app-hover-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 12px;
+    }
+
+    .app-hover-icon i {
+        font-size: 2rem;
+    }
+
+    .app-hover-title {
+        font-size: 1.15rem;
+        margin-bottom: 10px;
+        padding-bottom: 8px;
+        border-bottom-width: 2px;
+    }
+
+    .app-hover-description {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
     
 
