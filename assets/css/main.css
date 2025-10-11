@@ -253,3 +253,292 @@ a:hover{
     margin-bottom: 20px;
 }
 
+/* 纸塑回收解决方案模块样式 */
+.paper-plastic-solution-showcase {
+    background-color: #f8f9fa;
+}
+
+
+
+
+.main-products-title {
+    color: var(--accent-color);
+}
+
+
+.solution-categories {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.category-scroll-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    padding-bottom: 10px;
+}
+
+.category-scroll-container::-webkit-scrollbar {
+    display: none;
+}
+
+.solution-filter {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #e9ecef;
+    padding-bottom: 15px;
+}
+
+.solution-filter .nav-link {
+    color: #555 !important;
+    padding: 10px 20px !important;
+    margin: 0 10px;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    background-color: transparent;
+    text-transform: none;
+}
+
+.solution-filter .nav-link i {
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.solution-filter .nav-link.active {
+    background-color: var(--accent-color);
+    color: #fff !important;
+}
+
+.solution-filter .nav-link.active::after {
+    display: none;
+}
+
+.solution-filter .nav-link:hover:not(.active) {
+    background-color: rgba(119, 189, 90, 0.1);
+    color: var(--accent-color) !important;
+}
+
+.solution-flow-container {
+    margin-bottom: 50px;
+}
+
+.scroll-hint {
+    display: none;
+}
+
+.scroll-hint.show {
+    display: block;
+}
+
+.solution-flow-wrapper {
+    overflow-x: auto;
+    padding: 20px 0;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.solution-flow-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.solution-flow {
+    display: flex;
+    min-width: max-content;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.solution-module {
+    width: 160px;
+    text-align: center;
+    padding: 20px 15px 30px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+}
+
+.solution-module:hover,
+.solution-module.active {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.solution-module.active {
+    border: 2px solid var(--accent-color);
+}
+
+.module-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 15px;
+    background-color: rgba(119, 189, 90, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.module-icon i {
+    font-size: 1.8rem;
+    color: var(--accent-color);
+}
+
+.solution-module h4 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.solution-module p {
+    font-size: 0.85rem;
+    color: #777;
+    margin: 0 0 10px 0;
+}
+
+.module-hint {
+    position: absolute;
+    bottom: 8px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--accent-color);
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.solution-module:hover .module-hint {
+    opacity: 1;
+}
+
+.module-hint i {
+    margin-right: 4px;
+    font-size: 0.8rem;
+}
+
+.solution-flow-arrow {
+    margin: 0 15px;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+}
+
+.industry-showcase {
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.industry-content h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.industry-content .lead {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.industry-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+}
+
+.industry-features li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.industry-features li i {
+    color: var(--hover-color);
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.btn-bg-color {
+    background-color: var(--hover-color);
+    color: #fff;
+}
+.btn-bg-color:hover {
+    background-color: #fff;
+    color: var(--hover-color);
+}
+.industry-image {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.solution-animation {
+    height: 100%;
+    width: 100%;
+}
+
+.animation-container {
+    height: 100%;
+    width: 100%;
+}
+
+.product-flow {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.flow-step {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+.flow-step.active {
+    opacity: 1;
+    display: block;
+}
+
+.media-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.media-container img,
+.media-container .img-fluid {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+
+
+

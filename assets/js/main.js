@@ -1,0 +1,136 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // 检测滚动容器是否需要显示滑动提示
+    function checkScrollHint() {
+        const scrollContainers = document.querySelectorAll('.solution-flow-wrapper');
+        
+        scrollContainers.forEach(container => {
+            const scrollHint = container.closest('.solution-flow-container').querySelector('.scroll-hint');
+            
+            if (scrollHint) {
+                // 检查内容宽度是否大于容器宽度
+                const hasScroll = container.scrollWidth > container.clientWidth;
+                
+                if (hasScroll) {
+                    scrollHint.classList.add('show');
+                } else {
+                    scrollHint.classList.remove('show');
+                }
+            }
+        });
+    }
+    
+    // 页面加载时检测
+    checkScrollHint();
+    
+    // 窗口大小改变时重新检测
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(function() {
+            checkScrollHint();
+        }, 250);
+    });
+    
+    // 解决方案模块交互
+    const solutionModules = document.querySelectorAll('.solution-module');
+    
+    solutionModules.forEach(module => {
+        module.addEventListener('click', function() {
+            const moduleType = this.getAttribute('data-module');
+            const solutionType = this.getAttribute('data-solution');
+            
+            // 移除同一解决方案类型中所有模块的活动状态
+            document.querySelectorAll(`.solution-module[data-solution="${solutionType}"]`).forEach(mod => {
+                mod.classList.remove('active');
+            });
+            
+            // 为当前点击的模块添加活动状态
+            this.classList.add('active');
+            
+            // 显示对应的流程步骤内容
+            const flowSteps = document.querySelectorAll(`.flow-step[data-module="${moduleType}"]`);
+            
+            document.querySelectorAll('.flow-step').forEach(step => {
+                step.classList.remove('active');
+            });
+            
+            flowSteps.forEach(step => {
+                step.classList.add('active');
+            });
+        });
+    });
+    
+    // 初始化：确保每个解决方案类型的第一个模块处于活动状态
+    const solutionTypes = ['complete-line', 'single-equipment', 'custom'];
+    
+    solutionTypes.forEach(type => {
+        const firstModule = document.querySelector(`.solution-module[data-solution="${type}"]`);
+        if (firstModule) {
+            firstModule.classList.add('active');
+            
+            const moduleType = firstModule.getAttribute('data-module');
+            const flowSteps = document.querySelectorAll(`.flow-step[data-module="${moduleType}"]`);
+            
+            flowSteps.forEach(step => {
+                step.classList.add('active');
+            });
+        }
+    });
+    
+    // 处理选项卡切换事件
+    const solutionTabs = document.querySelectorAll('#solutionCategories .nav-link');
+    
+    solutionTabs.forEach(tab => {
+        tab.addEventListener('shown.bs.tab', function(event) {
+            const targetId = event.target.getAttribute('data-bs-target');
+            const targetPane = document.querySelector(targetId);
+            
+            if (targetPane) {
+                // 找到目标面板中的第一个模块并激活它
+                const firstModule = targetPane.querySelector('.solution-module');
+                if (firstModule) {
+                    firstModule.click();
+                }
+                
+                // 切换选项卡后重新检测滑动提示
+                setTimeout(function() {
+                    checkScrollHint();
+                }, 100);
+            }
+        });
+    });
+    
+    // 处理移动设备上的滚动
+    const scrollContainers = document.querySelectorAll('.category-scroll-container, .solution-flow-wrapper');
+    
+    scrollContainers.forEach(container => {
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        
+        container.addEventListener('mousedown', (e) => {
+            isDown = true;
+            container.classList.add('active');
+            startX = e.pageX - container.offsetLeft;
+            scrollLeft = container.scrollLeft;
+        });
+        
+        container.addEventListener('mouseleave', () => {
+            isDown = false;
+            container.classList.remove('active');
+        });
+        
+        container.addEventListener('mouseup', () => {
+            isDown = false;
+            container.classList.remove('active');
+        });
+        
+        container.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - container.offsetLeft;
+            const walk = (x - startX) * 2;
+            container.scrollLeft = scrollLeft - walk;
+        });
+    });
+});

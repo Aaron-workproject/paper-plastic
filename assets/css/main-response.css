@@ -49,6 +49,26 @@
     .trend_content .section_title {
         font-size: 2.4rem;
     }
+    
+    /* 纸塑回收解决方案响应式 */
+
+    
+    .solution-flow {
+        justify-content: flex-start;
+    }
+    
+    .industry-content {
+        margin-bottom: 30px;
+    }
+    
+    .industry-image {
+        min-height: 300px;
+    }
+    
+    .d-none.d-lg-block {
+        display: block !important;
+        margin-bottom: 30px;
+    }
 }
 @media (max-width: 767px) {
     .top-header .row {
@@ -116,5 +136,74 @@
     
     .trend_description {
         font-size: 1rem;
+    }
+    
+
+    
+    .solution-filter .nav-link {
+        padding: 8px 12px !important;
+        font-size: 0.85rem;
+        margin: 0 5px;
+    }
+    
+    .solution-module {
+        width: 120px;
+        padding: 15px 10px 25px;
+    }
+    
+    .module-icon {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 10px;
+    }
+    
+    .module-icon i {
+        font-size: 1.4rem;
+    }
+    
+    .solution-module h4 {
+        font-size: 0.85rem;
+    }
+    
+    .solution-module p {
+        font-size: 0.75rem;
+        margin-bottom: 8px;
+    }
+    
+    .module-hint {
+        font-size: 0.7rem;
+        bottom: 6px;
+        height: 16px;
+    }
+    
+    .module-hint i {
+        font-size: 0.7rem;
+        margin-right: 3px;
+    }
+    
+    .solution-flow-arrow {
+        margin: 0 5px;
+        font-size: 1.2rem;
+    }
+    
+    .industry-showcase {
+        padding: 20px;
+    }
+    
+    .industry-content h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .industry-content .lead {
+        font-size: 1rem;
+    }
+    
+    .industry-features li {
+        margin-bottom: 10px;
+    }
+    
+    .industry-image {
+        min-height: 250px;
     }
 }

@@ -79,6 +79,575 @@
                 </div>
             </div>
         </section>
+        <section class="paper-plastic-solution-showcase">
+            <!-- 整体解决方案模块 -->
+            <div id="solution-showcase" class="py-5 bg-light">
+                <div class="container">
+                    <div class="section-header text-center mb-5">
+                        <h2 class="main-products-title">Main Products</h2>
+                    </div>
+        
+                    <!-- 解决方案分类选项卡 -->
+                    <div class="solution-categories mb-4">
+                        <div class="category-scroll-container no-arrows">
+                            <ul class="nav nav-pills solution-filter" id="solutionCategories" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="complete-line-tab"data-bs-toggle="pill" data-bs-target="#complete-line-solution" type="button" role="tab" aria-controls="complete-line-solution" aria-selected="true">
+                                        <i class="bi bi-diagram-3"></i> 完整拆解生产线
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <!-- <button class="nav-link" id="single-equipment-tab" data-bs-toggle="pill" data-bs-target="#single-equipment-solution" type="button" role="tab" aria-controls="single-equipment-solution" aria-selected="false">
+                                        <i class="bi bi-gear-wide-connected"></i> 单设备解决方案
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="environmental-tab" data-bs-toggle="pill" data-bs-target="#custom-solution" type="button" role="tab" aria-controls="custom-solution" aria-selected="false">
+                                        <i class="bi bi-recycle"></i> 环保处理方案
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="automation-tab" data-bs-toggle="pill" data-bs-target="#custom-solution" type="button" role="tab" aria-controls="custom-solution" aria-selected="false">
+                                        <i class="bi bi-robot"></i> 自动化升级
+                                    </button>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+        
+                    <!-- 解决方案内容区域 -->
+                    <div class="tab-content" id="solutionCategoriesContent">
+                        <!-- 完整拆解生产线解决方案 -->
+                        <div class="tab-pane fade show active" id="complete-line-solution" role="tabpanel" aria-labelledby="complete-line-tab">
+                            <!-- 解决方案流程图 -->
+                            <div class="solution-flow-container">
+                                <div class="text-center mb-3 scroll-hint">
+                                    <small class="text-muted">
+                                        <i class="bi bi-cursor me-1"></i>滑动查看
+                                    </small>
+                                </div>
+                                <div class="solution-flow-wrapper">
+                                    <div class="solution-flow">
+                                        <!-- 进料模块 -->
+                                        <div class="solution-module" data-module="feeding" data-solution="complete-line">
+                                            <div class="module-icon">
+                                                <i class="bi bi-upload"></i>
+                                            </div>
+                                            <h4>智能进料</h4>
+                                            <p>自动识别分类</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 拆解模块 -->
+                                        <div class="solution-module" data-module="disassembly" data-solution="complete-line">
+                                            <div class="module-icon">
+                                                <i class="bi bi-tools"></i>
+                                            </div>
+                                            <h4>电机拆解</h4>
+                                            <p>机器人精拆</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 破碎模块 -->
+                                        <div class="solution-module" data-module="crushing" data-solution="complete-line">
+                                            <div class="module-icon">
+                                                <i class="bi bi-hammer"></i>
+                                            </div>
+                                            <h4>破碎分选</h4>
+                                            <p>铜线铁芯分离</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 分选模块 -->
+                                        <div class="solution-module" data-module="sorting" data-solution="complete-line">
+                                            <div class="module-icon">
+                                                <i class="bi bi-funnel"></i>
+                                            </div>
+                                            <h4>智能分选</h4>
+                                            <p>材料纯度分级</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 收集模块 -->
+                                        <div class="solution-module" data-module="collection" data-solution="complete-line">
+                                            <div class="module-icon">
+                                                <i class="bi bi-archive"></i>
+                                            </div>
+                                            <h4>成品收集</h4>
+                                            <p>自动打包存储</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 监控模块 -->
+                                        <div class="solution-module" data-module="monitoring" data-solution="complete-line">
+                                            <div class="module-icon">
+                                                <i class="bi bi-display"></i>
+                                            </div>
+                                            <h4>智能监控</h4>
+                                            <p>全程质量跟踪</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- 应用场景展示 -->
+                            <div class="industry-showcase mt-5">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 d-md-block d-none ">
+                                        <div class="industry-content">
+                                            <h3>完整拆解生产线方案</h3>
+                                            <p class="lead">
+                                                专为大型回收企业定制的高效自动化电机拆解回收解决方案
+                                            </p>
+                                            <ul class="industry-features">
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill"></i>
+                                                    <span>适用于各类电机规格（家电、工业、汽车）</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill "></i>
+                                                    <span>支持多品种混合流水线快速切换</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill "></i>
+                                                    <span>满足环保标准和安全生产要求</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill "></i>
+                                                    <span>日处理能力可达300台电机</span>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="archive-solution.html" class="btn btn-bg-color">了解更多完整方案</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="industry-image">
+                                            <div class="solution-animation">
+                                                <!-- 动态展示区域 -->
+                                                <div class="animation-container">
+                                                    <div class="product-flow">
+                                                        <!-- 智能进料系统展示 -->
+                                                        <div class="flow-step active" data-module="feeding">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/default.webp" alt="废电机智能进料系统" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 电机拆解系统展示 -->
+                                                        <div class="flow-step" data-module="disassembly">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/default.webp" alt="电机精密拆解系统" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 破碎分选系统展示 -->
+                                                        <div class="flow-step" data-module="crushing">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/default.webp" alt="转子定子破碎分选" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 智能分选系统展示 -->
+                                                        <div class="flow-step" data-module="sorting">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/default.webp" alt="材料智能分选系统" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 成品收集系统展示 -->
+                                                        <div class="flow-step" data-module="collection">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/default.webp" alt="成品自动收集包装" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 智能监控系统展示 -->
+                                                        <div class="flow-step" data-module="monitoring">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/default.webp" alt="全程智能监控系统" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- 单设备解决方案 -->
+                        <div class="tab-pane fade" id="single-equipment-solution" role="tabpanel" aria-labelledby="single-equipment-tab">
+                            <!-- 解决方案流程图 -->
+                            <div class="solution-flow-container">
+                                <div class="text-center mb-3 scroll-hint">
+                                    <small class="text-muted">
+                                        <i class="bi bi-cursor me-1"></i>滑动查看
+                                    </small>
+                                </div>
+                                <div class="solution-flow-wrapper">
+                                    <div class="solution-flow">
+                                        <!-- 需求分析模块 -->
+                                        <div class="solution-module" data-module="analysis" data-solution="single-equipment">
+                                            <div class="module-icon">
+                                                <i class="bi bi-search"></i>
+                                            </div>
+                                            <h4>需求分析</h4>
+                                            <p>深入了解客户需求</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 设备选型模块 -->
+                                        <div class="solution-module" data-module="selection" data-solution="single-equipment">
+                                            <div class="module-icon">
+                                                <i class="bi bi-gear-wide-connected"></i>
+                                            </div>
+                                            <h4>设备选型</h4>
+                                            <p>精准匹配最优设备</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 安装调试模块 -->
+                                        <div class="solution-module" data-module="installation" data-solution="single-equipment">
+                                            <div class="module-icon">
+                                                <i class="bi bi-wrench"></i>
+                                            </div>
+                                            <h4>安装调试</h4>
+                                            <p>专业团队现场施工</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 培训指导模块 -->
+                                        <div class="solution-module" data-module="training" data-solution="single-equipment">
+                                            <div class="module-icon">
+                                                <i class="bi bi-people"></i>
+                                            </div>
+                                            <h4>培训指导</h4>
+                                            <p>操作技能全面培训</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 售后服务模块 -->
+                                        <div class="solution-module" data-module="service" data-solution="single-equipment">
+                                            <div class="module-icon">
+                                                <i class="bi bi-headset"></i>
+                                            </div>
+                                            <h4>售后服务</h4>
+                                            <p>长期维护保障</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- 应用场景展示 -->
+                            <div class="industry-showcase mt-5">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 d-none d-lg-block">
+                                        <div class="industry-content">
+                                            <h3>单设备精准解决方案</h3>
+                                            <p class="lead">
+                                                针对特定回收需求，提供单一设备的专业解决方案
+                                            </p>
+                                            <ul class="industry-features">
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                                    <span>精准需求分析，匹配最优设备</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                                    <span>投资成本可控，快速回本</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                                    <span>安装简便，占地面积小</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                                    <span>专业培训，快速上手操作</span>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="archive-product.html" class="btn btn-primary"
+                                                >查看单设备产品</a
+                                                >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="industry-image">
+                                            <div class="solution-animation">
+                                                <!-- 动态展示区域 -->
+                                                <div class="animation-container">
+                                                    <div class="product-flow">
+                                                        <!-- 需求分析展示 -->
+                                                        <div class="flow-step active" data-module="analysis">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="需求分析服务" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 设备选型展示 -->
+                                                        <div class="flow-step" data-module="selection">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="设备选型方案" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 安装调试展示 -->
+                                                        <div class="flow-step" data-module="installation">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="专业安装调试" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 培训指导展示 -->
+                                                        <div class="flow-step" data-module="training">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="培训指导服务" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 售后服务展示 -->
+                                                        <div class="flow-step" data-module="service">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="售后服务保障" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- 定制化解决方案 -->
+                        <div class="tab-pane fade" id="custom-solution" role="tabpanel" aria-labelledby="custom-tab">
+                            <!-- 解决方案流程图 -->
+                            <div class="solution-flow-container">
+                                <div class="text-center mb-3 scroll-hint">
+                                    <small class="text-muted">
+                                        <i class="bi bi-cursor me-1"></i>滑动查看
+                                    </small>
+                                </div>
+                                <div class="solution-flow-wrapper">
+                                    <div class="solution-flow">
+                                        <!-- 现场勘察模块 -->
+                                        <div class="solution-module" data-module="survey" data-solution="custom">
+                                            <div class="module-icon">
+                                                <i class="bi bi-geo-alt"></i>
+                                            </div>
+                                            <h4>现场勘察</h4>
+                                            <p>实地考察评估</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 方案设计模块 -->
+                                        <div class="solution-module" data-module="design" data-solution="custom">
+                                            <div class="module-icon">
+                                                <i class="bi bi-diagram-3"></i>
+                                            </div>
+                                            <h4>方案设计</h4>
+                                            <p>量身定制方案</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 设备制造模块 -->
+                                        <div class="solution-module" data-module="manufacture" data-solution="custom">
+                                            <div class="module-icon">
+                                                <i class="bi bi-tools"></i>
+                                            </div>
+                                            <h4>设备制造</h4>
+                                            <p>专业工厂生产</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 现场安装模块 -->
+                                        <div class="solution-module" data-module="install" data-solution="custom">
+                                            <div class="module-icon">
+                                                <i class="bi bi-building"></i>
+                                            </div>
+                                            <h4>现场安装</h4>
+                                            <p>专业团队施工</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 系统调试模块 -->
+                                        <div class="solution-module" data-module="debug" data-solution="custom">
+                                            <div class="module-icon">
+                                                <i class="bi bi-speedometer2"></i>
+                                            </div>
+                                            <h4>系统调试</h4>
+                                            <p>性能优化调试</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+        
+                                        <!-- 箭头 -->
+                                        <div class="solution-flow-arrow">
+                                            <i class="bi bi-arrow-right"></i>
+                                        </div>
+        
+                                        <!-- 验收交付模块 -->
+                                        <div class="solution-module" data-module="delivery" data-solution="custom">
+                                            <div class="module-icon">
+                                                <i class="bi bi-check-circle"></i>
+                                            </div>
+                                            <h4>验收交付</h4>
+                                            <p>培训交接运营</p>
+                                            <span class="module-hint"><i class="bi bi-cursor"></i>点击切换</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                            <!-- 应用场景展示 -->
+                            <div class="industry-showcase mt-5">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-6 d-none d-lg-block">
+                                        <div class="industry-content">
+                                            <h3>专业定制化解决方案</h3>
+                                            <p class="lead">
+                                                根据客户具体需求，量身打造最适合的废电机回收解决方案
+                                            </p>
+                                            <ul class="industry-features">
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                                    <span>专业技术团队现场勘察评估</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                                    <span>定制化设备组合配置方案</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                                    <span>全程技术支持和培训服务</span>
+                                                </li>
+                                                <li>
+                                                    <i class="bi bi-check-circle-fill text-primary"></i>
+                                                    <span>完善的售后维护保障体系</span>
+                                                </li>
+                                            </ul>
+                                            <div class="mt-4">
+                                                <a href="page-contact.html" class="btn btn-primary">免费咨询方案</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-12">
+                                        <div class="industry-image">
+                                            <div class="solution-animation">
+                                                <!-- 动态展示区域 -->
+                                                <div class="animation-container">
+                                                    <div class="product-flow">
+                                                        <!-- 现场勘察展示 -->
+                                                        <div class="flow-step active" data-module="survey">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="现场勘察评估" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 方案设计展示 -->
+                                                        <div class="flow-step" data-module="design">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="定制方案设计" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 设备制造展示 -->
+                                                        <div class="flow-step" data-module="manufacture">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="专业设备制造" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 现场安装展示 -->
+                                                        <div class="flow-step" data-module="install">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="现场安装施工" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 系统调试展示 -->
+                                                        <div class="flow-step" data-module="debug">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="系统调试优化" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                        <!-- 验收交付展示 -->
+                                                        <div class="flow-step" data-module="delivery">
+                                                            <div class="media-container">
+                                                                <img src="assets/images/logo.webp" alt="验收交付运营" loading="lazy"/>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="industry_trends">
             <div class="container">
                 <div class="row align-items-center">
