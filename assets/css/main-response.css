@@ -202,6 +202,24 @@
         right: 25px;
         font-size: 1.2rem;
     }
+
+    /* 二维码响应式 */
+    .qr-codes-container {
+        gap: 20px;
+    }
+
+    .qr-code-wrapper {
+        width: 120px;
+        height: 120px;
+    }
+
+    .qr-code-label {
+        font-size: 0.95rem;
+    }
+
+    .qr-code-label i {
+        font-size: 1.2rem;
+    }
      
     /* 纸塑回收解决方案响应式 */
 
@@ -527,6 +545,28 @@
         right: 20px;
         font-size: 1.1rem;
     }
+
+    /* 二维码响应式 - 小屏幕 */
+    .qr-codes-container {
+        gap: 15px;
+        justify-content: center;
+    }
+
+    .qr-code-wrapper {
+        width: 100px;
+        height: 100px;
+        padding: 8px;
+    }
+
+    .qr-code-label {
+        font-size: 0.9rem;
+    }
+
+    .qr-code-label i {
+        font-size: 1.1rem;
+    }
+
+   
     
 
     
