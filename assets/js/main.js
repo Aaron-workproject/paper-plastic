@@ -1,4 +1,36 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // 产品详情页缩略图切换功能
+    const thumbnailItems = document.querySelectorAll('.thumbnail-item');
+    
+    if (thumbnailItems.length > 0) {
+        thumbnailItems.forEach(item => {
+            item.addEventListener('click', function() {
+                // 移除所有缩略图的活动状态
+                thumbnailItems.forEach(thumb => {
+                    thumb.classList.remove('active');
+                });
+                
+                // 为当前点击的缩略图添加活动状态
+                this.classList.add('active');
+                
+                // 获取目标媒体项的ID
+                const targetId = this.getAttribute('data-target');
+                
+                // 隐藏所有媒体项
+                const mediaItems = document.querySelectorAll('.product-media-item');
+                mediaItems.forEach(mediaItem => {
+                    mediaItem.classList.remove('active');
+                });
+                
+                // 显示对应的媒体项
+                const targetMedia = document.getElementById(targetId);
+                if (targetMedia) {
+                    targetMedia.classList.add('active');
+                }
+            });
+        });
+    }
+    
     // 检测滚动容器是否需要显示滑动提示
     function checkScrollHint() {
         const scrollContainers = document.querySelectorAll('.solution-flow-wrapper');

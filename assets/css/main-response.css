@@ -13,6 +13,33 @@
         left: 15px;
     }
     
+    /* 产品详情页响应式 */
+    .product-top-content {
+        padding: 20px 0;
+    }
+    
+    .product-title {
+        font-size: 1.8rem;
+    }
+    
+    .product-main-media {
+        height: 350px;
+        margin-bottom: 20px;
+    }
+    
+    .product-info {
+        margin-top: 20px;
+    }
+    
+    .product-actions {
+        display: flex;
+        gap: 10px;
+    }
+    
+    .product-actions .btn {
+        flex: 1;
+    }
+    
     /*关于我们-数据展示响应式*/
     .about-data {
         padding: 60px 0;
@@ -820,6 +847,55 @@
     .modal-dialog {
         max-width: 90%;
         margin: 0.5rem auto;
+    }
+    
+    /* 产品详情页响应式 */
+    .product-title {
+        font-size: 1.5rem;
+        padding-bottom: 10px;
+    }
+    
+    .product-main-media {
+        height: 300px;
+    }
+    
+    .thumbnail-item {
+        height: 60px;
+    }
+    
+    .spec-label {
+        width: 80px;
+        font-size: 0.9rem;
+    }
+    
+    .spec-value {
+        font-size: 0.9rem;
+    }
+    
+    .description-title {
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+    }
+    
+    .product-description p {
+        font-size: 0.9rem;
+    }
+    
+    .product-features li {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+    
+    .product-actions .btn {
+        padding: 8px 15px;
+        font-size: 0.9rem;
+        display: block;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .product-actions .btn:last-child {
+        margin-bottom: 0;
     }
 }
 
