@@ -1,5 +1,30 @@
 /* 响应式样式 */
 @media (max-width: 991.98px) {
+    /* 关于我们页面-图片响应式 */
+    .about-image-container {
+        padding-bottom: 80%;
+        margin-bottom: 30px;
+    }
+    
+    .about-image-badge {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+        top: 15px;
+        left: 15px;
+    }
+    
+    /*关于我们-数据展示响应式*/
+    .about-data {
+        padding: 60px 0;
+    }
+
+    .data-title {
+        font-size: 2rem;
+    }
+
+    .data-item {
+        padding: 35px 15px;
+    }
     .navbar-collapse {
         background-color: #ffffff;
         position: absolute;
@@ -240,8 +265,40 @@
         display: block !important;
         margin-bottom: 30px;
     }
+    /*内页banner响应式*/
+    .page_banner {
+        height: 350px;
+    }
+
+    .banner-title {
+        font-size: 3rem;
+        letter-spacing: 6px;
+    }
+
+    .banner-breadcrumb {
+        font-size: 13px;
+        gap: 10px;
+    }
+  
+    
+    .team-image-container {
+        height: 250px;
+    }
 }
 @media (max-width: 767px) {
+    /* 关于我们页面-图片响应式 */
+    .about-image-container {
+        padding-bottom: 85%;
+    }
+    
+    .about-image-badge {
+        padding: 7px 14px;
+        font-size: 0.75rem;
+        top: 12px;
+        left: 12px;
+        letter-spacing: 1px;
+    }
+    
     .top-header .row {
         text-align: center;
     }
@@ -275,6 +332,45 @@
     
     .trend_content {
         margin-bottom: 30px;
+    }
+    /*内页banner响应式*/
+    .page_banner {
+        height: 300px;
+    }
+
+    .banner-title {
+        font-size: 2.5rem;
+        letter-spacing: 4px;
+        padding-bottom: 15px;
+    }
+
+    .banner-title::after {
+        width: 80px;
+        height: 3px;
+    }
+
+    .banner-breadcrumb {
+        font-size: 12px;
+        gap: 8px;
+        margin-bottom: 15px;
+    }
+
+    .banner-breadcrumb a {
+        font-size: 16px;
+    }
+      /* 团队模块响应式 */
+   
+    
+    .team-image-container {
+        height: 240px;
+    }
+    
+    .team-info {
+        padding: 15px;
+    }
+    
+    .modal-dialog {
+        max-width: 95%;
     }
 }
 
@@ -636,4 +732,97 @@
     .industry-image {
         min-height: 250px;
     }
+    /*内页banner响应式*/
+    .page_banner {
+        height: 250px;
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        letter-spacing: 3px;
+        padding-bottom: 12px;
+       
+    }
+
+    .banner-title::after {
+        width: 60px;
+        height: 2px;
+    }
+
+    .banner-breadcrumb {
+        font-size: 11px;
+        gap: 6px;
+        margin-bottom: 12px;
+    }
+
+    .banner-breadcrumb a {
+        font-size: 14px;
+    }
+
+    .banner-breadcrumb i.bi-arrow-right {
+        font-size: 10px;
+    }
+
+    /*关于我们-数据展示响应式*/
+    .about-data {
+        padding: 50px 0;
+    }
+
+    .data-title {
+        font-size: 1.8rem;
+        letter-spacing: 1px;
+    }
+
+    .data-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .data-icon i {
+        font-size: 2rem;
+    }
+
+    .data-item-title {
+        font-size: 1rem;
+    }
+
+    .data-item-text {
+        font-size: 0.9rem;
+    }
+
+    /* 关于我们页面-图片响应式 */
+    .about-image-container {
+        padding-bottom: 90%;
+    }
+    
+    .about-image-badge {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+        top: 10px;
+        left: 10px;
+        letter-spacing: 0.8px;
+    }
+    
+    /* 团队模块响应式 */
+    .section-title {
+       
+        letter-spacing: 1px;
+    }
+    
+    .team-image-container {
+        height: 220px;
+    }
+    
+    .team-info h3 {
+        font-size: 1rem;
+    }
+    
+    .modal-dialog {
+        max-width: 90%;
+        margin: 0.5rem auto;
+    }
 }
+
+
+
+

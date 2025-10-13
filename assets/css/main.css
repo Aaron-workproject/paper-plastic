@@ -1330,4 +1330,393 @@ a:hover{
     color: #ffffff;
 }
 
+/* ===================================
+   内页Banner样式
+   =================================== */
+.page_banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.banner-image-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.banner-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: 1;
+}
+
+.banner-content-wrapper {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.banner-breadcrumb {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: var(--text-light);
+    font-size: 14px;
+    margin-bottom: 20px;
+    opacity: 0.95;
+}
+
+.banner-breadcrumb a {
+    color: var(--text-light) !important;
+    transition: all var(--transition-speed);
+    font-size: 18px;
+}
+
+.banner-breadcrumb a:hover {
+    color: var(--hover-color) !important;
+    transform: translateY(-2px);
+}
+
+.banner-breadcrumb i.bi-arrow-right {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.banner-breadcrumb span {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.banner-title {
+    font-family: var(--heading-font);
+    font-weight: 800;
+    color: var(--text-light);
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin: 0;
+    text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+    padding-bottom: 20px;
+}
+
+/* ===================================
+   关于我们-数据展示样式
+   =================================== */
+.about-data {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+.data-header {
+    margin-bottom: 40px;
+}
+
+.data-subtitle {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--hover-color);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.data-title {
+    font-family: var(--heading-font);
+   
+    font-weight: 800;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.data-item {
+    padding: 40px 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    transition: all var(--transition-speed);
+    height: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.data-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.data-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, var(--hover-color) 0%, var(--accent-color) 100%);
+    border-radius: 50%;
+    transition: all var(--transition-speed);
+}
+
+.data-item:hover .data-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.data-icon i {
+    font-size: 2.5rem;
+    color: #ffffff;
+}
+
+.data-item-title {
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--bg-header);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.data-item-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ===================================
+   关于我们页面-图片样式
+   =================================== */
+.about-image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 75%; /* 4:3 宽高比 */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.about-level{
+    position: relative;
+    z-index: 2;
+}
+.about-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.about-image-badge {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background: linear-gradient(135deg, var(--hover-color) 0%, var(--accent-color) 100%);
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;
+}
+
+/* ===================================
+   关于我们页面-团队模块样式
+   =================================== */
+.about-team {
+    background-color: #f8f9fa;
+    position: relative;
+    overflow: hidden;
+}
+
+.about-team::before {
+    content: '';
+    position: absolute;
+    top: -150px;
+    right: -150px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(119, 189, 90, 0.1) 0%, rgba(119, 189, 90, 0) 70%);
+    z-index: 1;
+}
+
+.about-team::after {
+    content: '';
+    position: absolute;
+    bottom: -100px;
+    left: -100px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(246, 171, 0, 0.1) 0%, rgba(246, 171, 0, 0) 70%);
+    z-index: 1;
+}
+
+
+
+.section-title {
+    font-family: var(--heading-font);
+    
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block;
+}
+
+
+
+.team-gallery {
+    position: relative;
+    z-index: 2;
+}
+
+.team-member {
+    cursor: pointer;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    background-color: #fff;
+}
+
+.team-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.team-image-container {
+    position: relative;
+    overflow: hidden;
+    
+}
+
+.team-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.team-member:hover .team-image-container img {
+    transform: scale(1.05);
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0) 100%);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+}
+
+.team-overlay i {
+    color: #fff;
+    font-size: 2rem;
+    transform: scale(0.5);
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.team-member:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-member:hover .team-overlay i {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.team-info {
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.team-info h3 {
+    font-family: var(--heading-font);
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--bg-header);
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.team-info h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, var(--hover-color) 0%, var(--accent-color) 100%);
+}
+
+/* 模态框样式 */
+.modal-content {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.modal-header {
+    border-bottom: none;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    z-index: 10;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.team-modal-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.team-modal-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-height: 80vh;
+    object-fit: contain;
+}
 

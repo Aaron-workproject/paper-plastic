@@ -156,4 +156,24 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
+    
+    // 团队成员模态框
+    const teamModal = document.getElementById('teamModal');
+    if (teamModal) {
+        teamModal.addEventListener('show.bs.modal', function(event) {
+            // 获取触发模态框的元素
+            const button = event.relatedTarget;
+            
+            // 从data属性中提取图片信息
+            const image = button.getAttribute('data-image');
+            
+            // 更新模态框内容
+            const modalImage = teamModal.querySelector('#modalImage');
+            modalImage.src = image;
+            
+            // 使用alt属性获取职位名称作为替代文本
+            const position = button.querySelector('img').getAttribute('alt');
+            modalImage.alt = position;
+        });
+    }
 });
