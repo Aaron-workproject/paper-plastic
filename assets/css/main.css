@@ -2568,7 +2568,7 @@ a:hover{
 }
 
 .inquiry-form-content {
-    max-width: 900px;
+ 
     margin: 0 auto;
     background-color: #ffffff;
     padding: 40px;
@@ -2639,5 +2639,251 @@ a:hover{
 
 .btn-inquiry i {
     font-size: 1.1rem;
+}
+
+/* 视频列表页面样式 */
+.videos-list {
+    background-color: #ffffff;
+   
+}
+
+.videos-main-title {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bg-header);
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.videos-main-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--hover-color) 0%, var(--accent-color) 100%);
+}
+
+.videos-subtitle {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* 视频筛选 */
+.videos-filter {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.filter-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.filter-btn {
+    background: none;
+    border: none;
+    padding: 8px 15px;
+    font-size: 0.95rem;
+    color: #666;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    color: var(--accent-color);
+    background-color: rgba(119, 189, 90, 0.1);
+}
+
+.filter-btn.active {
+    color: #fff;
+    background-color: var(--accent-color);
+}
+
+.filter-search .form-control {
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    font-size: 0.95rem;
+}
+
+.filter-search .form-control:focus {
+    box-shadow: none;
+    border-color: var(--accent-color);
+}
+
+.btn-search {
+    border-radius: 0 20px 20px 0;
+    background-color: var(--accent-color);
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+}
+
+.btn-search:hover {
+    background-color: var(--hover-color);
+}
+
+/* 视频卡片 */
+.video-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.video-thumbnail {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%; /* 16:9 比例 */
+}
+
+.video-thumbnail img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.video-card:hover .video-thumbnail img {
+    transform: scale(1.05);
+}
+
+.video-play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 3rem;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    z-index: 2;
+    text-decoration: none;
+}
+
+.video-play-btn:hover {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+    color: #fff;
+}
+
+.video-thumbnail:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0.6));
+    z-index: 1;
+}
+
+.video-category {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: var(--accent-color);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    z-index: 2;
+}
+
+.video-content {
+    padding: 20px;
+}
+
+.video-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.video-title a {
+    color: var(--bg-header)!important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.video-title a:hover {
+    color: var(--accent-color);
+}
+
+/* 分页 */
+.videos-pagination {
+    margin-top: 40px;
+}
+
+.pagination {
+    gap: 5px;
+}
+
+.page-link {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: #666!important;
+    border: 1px solid #ddd;
+    transition: all 0.3s ease;
+}
+
+.page-link:hover {
+    background-color: #f5f5f5;
+    color: var(--accent-color);
+    border-color: #ddd;
+}
+
+.page-item.active .page-link {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+    color: #fff;
+}
+
+.page-item.disabled .page-link {
+    color: #ccc;
+    background-color: #f9f9f9;
+}
+/* videos相关产品展示区域 */
+.related-content-less {
+    background-color: #f5f5f5!important;
+    
+}
+
+/* videos询价表单区域 */
+.inquiry-form-videos {
+    background-color: #ffffff!important;
+    
 }
 

@@ -1260,6 +1260,34 @@
         font-size: 0.9rem;
         width: 100%;
     }
+    
+    /* 视频列表响应式 */
+    .videos-list {
+        padding: 40px 0;
+    }
+    
+    .videos-main-title {
+        font-size: 1.6rem;
+        margin-bottom: 15px;
+    }
+    
+    .videos-subtitle {
+        font-size: 1rem;
+    }
+    
+    .video-play-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 2.5rem;
+    }
+    
+    .video-content {
+        padding: 15px;
+    }
+    
+    .video-title {
+        font-size: 1rem;
+    }
 }
 
 
