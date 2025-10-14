@@ -1288,6 +1288,30 @@
     .video-title {
         font-size: 1rem;
     }
+    
+    /* 单个视频详情页响应式 */
+    .single-videos-details {
+        padding: 30px 0;
+    }
+    
+    .video-detail-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+    }
+    
+    .video-meta-info {
+        padding: 12px 0;
+    }
+    
+    .video-tag {
+        padding: 3px 10px;
+        font-size: 0.8rem;
+    }
+    
+    .share-link {
+        width: 32px;
+        height: 32px;
+    }
 }
 
 
