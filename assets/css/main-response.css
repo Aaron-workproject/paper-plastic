@@ -14,9 +14,7 @@
     }
     
     /* 产品详情页响应式 */
-    .product-top-content {
-        padding: 20px 0;
-    }
+    
     
     .product-title {
         font-size: 1.8rem;
@@ -354,6 +352,123 @@
     
     .indicator-dot.active {
         width: 25px;
+    }
+    
+    /* 产品解决方案响应式 */
+  
+    
+    .solution-main-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .solution-card {
+        padding: 20px;
+        margin-bottom: 25px;
+    }
+    
+    .solution-card-title {
+        font-size: 1.2rem;
+    }
+    
+    .solution-card-description {
+        font-size: 0.9rem;
+    }
+    
+    .solution-examples-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
+    }
+    
+    /* 产品描述响应式 */
+ 
+    .description-main-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .description-content {
+        padding: 30px 35px;
+    }
+    
+    .description-content p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+    }
+    
+    /* 单机展示响应式 */
+   
+    
+    .machine-main-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .machine-summary p {
+        font-size: 1rem;
+    }
+    
+    .machine-card {
+        padding: 18px;
+        margin-bottom: 20px;
+    }
+    
+    .machine-title {
+        font-size: 1.05rem;
+    }
+    
+    .machine-description {
+        font-size: 0.85rem;
+    }
+    
+    /* 相关产品响应式 */
+    .product-related-content {
+        padding: 40px 0;
+    }
+    
+    .related-main-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .related-item {
+        padding: 20px 25px;
+        gap: 15px;
+    }
+    
+    .related-number {
+        font-size: 1.8rem;
+        min-width: 45px;
+    }
+    
+    .related-title {
+        font-size: 1.05rem;
+    }
+    
+    /* 询价表单响应式 */
+  
+    
+    .inquiry-main-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .inquiry-intro p {
+        font-size: 0.95rem;
+    }
+    
+    .inquiry-form-content {
+        padding: 30px 25px;
+    }
+    
+    .inquiry-form-content .form-control {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .btn-inquiry {
+        padding: 10px 30px;
+        font-size: 0.95rem;
     }
 }
 @media (max-width: 767px) {
@@ -991,6 +1106,159 @@
     
     .indicator-dot.active {
         width: 22px;
+    }
+    
+    /* 产品解决方案响应式 */
+ 
+    
+    .solution-main-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .solution-card {
+        padding: 15px;
+        margin-bottom: 20px;
+    }
+    
+    .solution-card-title {
+        font-size: 1.1rem;
+        margin-bottom: 12px;
+    }
+    
+    .solution-card-description {
+        font-size: 0.85rem;
+        margin-bottom: 15px;
+    }
+    
+    .solution-examples-tag {
+        font-size: 0.85rem;
+        padding: 6px 14px;
+    }
+    
+    .solution-examples-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+    
+    /* 产品描述响应式 */
+ 
+    
+    .description-main-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .description-content {
+        padding: 25px 20px;
+    }
+    
+    .description-content p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    /* 单机展示响应式 */
+ 
+    
+    .machine-main-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .machine-summary {
+        padding: 0 15px;
+    }
+    
+    .machine-summary p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .machine-card {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+    
+    .machine-image {
+        margin-bottom: 12px;
+    }
+    
+    .machine-title {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    
+    .machine-description {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    /* 相关产品响应式 */
+    .product-related-content {
+        padding: 30px 0;
+    }
+    
+    .related-main-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .related-item {
+        padding: 18px 20px;
+        gap: 12px;
+    }
+    
+    .related-number {
+        font-size: 1.5rem;
+        min-width: 40px;
+    }
+    
+    .related-title {
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+    
+    /* 询价表单响应式 */
+
+    
+    .inquiry-main-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .inquiry-intro {
+        padding: 0 15px;
+    }
+    
+    .inquiry-intro p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+    }
+    
+    .inquiry-form-content {
+        padding: 25px 20px;
+    }
+    
+    .inquiry-form-content label {
+        font-size: 0.9rem;
+        margin-bottom: 6px;
+    }
+    
+    .inquiry-form-content .form-control {
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+    
+    .inquiry-form-content textarea.form-control {
+        min-height: 100px;
+    }
+    
+    .btn-inquiry {
+        padding: 10px 25px;
+        font-size: 0.9rem;
+        width: 100%;
     }
 }
 

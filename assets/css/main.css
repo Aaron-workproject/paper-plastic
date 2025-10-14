@@ -1722,7 +1722,7 @@ a:hover{
 
 /* 产品详情页样式 */
 .product-top-content {
-    padding: 30px 0;
+   
     background-color: #ffffff;
 }
 
@@ -2137,5 +2137,507 @@ a:hover{
     background-color: var(--hover-color);
     width: 28px;
     border-radius: 5px;
+}
+
+/* 产品解决方案展示区域 */
+.product-solution {
+    background-color: #ffffff;
+    
+}
+
+.solution-main-title {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bg-header);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.solution-main-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--hover-color) 0%, var(--accent-color) 100%);
+}
+
+.solution-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.solution-card:hover {
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+    transform: translateY(-5px);
+}
+
+.solution-video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
+
+.solution-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.solution-card-title {
+    font-family: var(--heading-font);
+    
+    font-weight: 600;
+    color: var(--bg-header);
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.solution-card-description {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.solution-examples-tag {
+    display: inline-flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--accent-color) 0%, var(--hover-color) 100%);
+    color: #fff;
+    padding: 8px 18px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.solution-examples-tag i {
+    font-size: 1rem;
+}
+
+.solution-examples-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.example-image-item {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* 1:1 aspect ratio */
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #e9ecef;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.example-image-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.example-image-item:hover .example-overlay {
+    opacity: 1;
+}
+
+.example-image-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.example-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+}
+
+.example-overlay i {
+    color: #fff;
+    font-size: 2rem;
+}
+
+/* 示例图片模态框样式 */
+.example-modal-image {
+    max-width: 100%;
+}
+
+.example-modal-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* 产品详细描述区域 */
+.product-detail-description {
+    background-color: #f5f5f5;
+    
+}
+
+.description-main-title {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bg-header);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.description-main-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--hover-color) 0%, var(--accent-color) 100%);
+}
+
+.description-content {
+    
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.description-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.description-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* 单机展示区域 */
+.single-machine-content {
+    background-color: #ffffff;
+   
+}
+
+.machine-main-title {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bg-header);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.machine-main-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--hover-color) 0%, var(--accent-color) 100%);
+}
+
+.machine-summary {
+    
+    margin: 0 auto;
+    
+    padding: 0 20px;
+}
+
+.machine-summary p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.machine-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.machine-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.machine-image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%; /* 4:3 aspect ratio */
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #e9ecef;
+    margin-bottom: 15px;
+}
+
+.machine-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.machine-card:hover .machine-image img {
+    transform: scale(1.05);
+}
+
+.machine-title {
+    font-family: var(--heading-font);
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--bg-header);
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.machine-description {
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* 相关产品展示区域 */
+.product-related-content {
+    background-color: #ffffff;
+    
+}
+
+.related-main-title {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bg-header);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.related-main-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--hover-color) 0%, var(--accent-color) 100%);
+}
+
+.related-item {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border-left: 4px solid transparent;
+}
+
+.related-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+    border-left-color: var(--accent-color);
+}
+
+.related-number {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--hover-color);
+    line-height: 1;
+    min-width: 50px;
+}
+
+.related-title {
+    font-family: var(--heading-font);
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    line-height: 1.4;
+}
+
+.related-title a {
+    color: var(--bg-header)!important;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.related-title a:hover {
+    color: var(--accent-color);
+}
+
+/* 询价表单区域 */
+.inquiry-form {
+    background-color: #f5f5f5;
+   
+}
+
+.inquiry-main-title {
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--bg-header);
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.inquiry-main-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, var(--hover-color) 0%, var(--accent-color) 100%);
+}
+
+.inquiry-intro {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.inquiry-intro p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #666;
+    margin-bottom: 0;
+}
+
+.inquiry-form-content {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.inquiry-form-content .form-group {
+    margin-bottom: 20px;
+}
+
+.inquiry-form-content label {
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.inquiry-form-content .required {
+    color: #dc3545;
+    font-weight: 600;
+}
+
+.inquiry-form-content .form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 0.95rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+}
+
+.inquiry-form-content .form-control:focus {
+    outline: none;
+    border-color: var(--accent-color);
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(119, 189, 90, 0.1);
+}
+
+.inquiry-form-content textarea.form-control {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-inquiry {
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 12px 40px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-inquiry:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+}
+
+.btn-inquiry i {
+    font-size: 1.1rem;
 }
 

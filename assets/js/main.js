@@ -16,10 +16,18 @@ document.addEventListener('DOMContentLoaded', function() {
                 // 获取目标媒体项的ID
                 const targetId = this.getAttribute('data-target');
                 
-                // 隐藏所有媒体项
+                // 隐藏所有媒体项并暂停YouTube视频
                 const mediaItems = document.querySelectorAll('.product-media-item');
                 mediaItems.forEach(mediaItem => {
                     mediaItem.classList.remove('active');
+                    
+                    // 暂停YouTube视频
+                    const youtubeIframe = mediaItem.querySelector('iframe.product-video');
+                    if (youtubeIframe) {
+                        // 通过重新设置src来停止视频播放
+                        const iframeSrc = youtubeIframe.src;
+                        youtubeIframe.src = iframeSrc;
+                    }
                 });
                 
                 // 显示对应的媒体项
@@ -246,4 +254,26 @@ document.addEventListener('DOMContentLoaded', function() {
             switchProcess(indicatorNumber);
         });
     });
+    
+    // 示例图片模态框
+    const exampleImageModal = document.getElementById('exampleImageModal');
+    if (exampleImageModal) {
+        exampleImageModal.addEventListener('show.bs.modal', function(event) {
+            // 获取触发模态框的元素
+            const button = event.relatedTarget;
+            
+            // 从data属性中提取图片信息
+            const image = button.getAttribute('data-image');
+            
+            // 更新模态框内容
+            const modalImage = exampleImageModal.querySelector('#modalExampleImage');
+            modalImage.src = image;
+            
+            // 使用alt属性获取图片名称作为替代文本
+            const imgElement = button.querySelector('img');
+            if (imgElement) {
+                modalImage.alt = imgElement.getAttribute('alt');
+            }
+        });
+    }
 });
