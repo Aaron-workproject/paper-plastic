@@ -1,5 +1,32 @@
 /* 响应式样式 */
 @media (max-width: 991.98px) {
+    /* 联系我们页面顶部信息栏响应式 */
+    .contact-us-top {
+        padding: 40px 0;
+    }
+
+    .contact-info-card {
+        padding: 30px 15px;
+        margin-bottom: 20px;
+    }
+
+    .contact-icon-wrapper {
+        width: 70px;
+        height: 70px;
+    }
+
+    .contact-icon-wrapper i {
+        font-size: 1.8rem;
+    }
+
+    .contact-info-title {
+        font-size: 1.1rem;
+    }
+
+    .contact-info-text {
+        font-size: 0.95rem;
+    }
+
     /* 关于我们页面-图片响应式 */
     .about-image-container {
         padding-bottom: 80%;
@@ -472,6 +499,33 @@
     }
 }
 @media (max-width: 767px) {
+    /* 联系我们页面顶部信息栏响应式 */
+    .contact-us-top {
+        padding: 30px 0;
+    }
+
+    .contact-info-card {
+        padding: 25px 15px;
+    }
+
+    .contact-icon-wrapper {
+        width: 65px;
+        height: 65px;
+    }
+
+    .contact-icon-wrapper i {
+        font-size: 1.6rem;
+    }
+
+    .contact-info-title {
+        font-size: 1.05rem;
+        margin-bottom: 12px;
+    }
+
+    .contact-info-text {
+        font-size: 0.9rem;
+    }
+
     /* 关于我们页面-图片响应式 */
     .about-image-container {
         padding-bottom: 85%;
@@ -567,6 +621,34 @@
 
 
 @media (max-width: 576px) {
+    /* 联系我们页面顶部信息栏响应式 */
+    .contact-us-top {
+        padding: 25px 0;
+    }
+
+    .contact-info-card {
+        padding: 20px 15px;
+    }
+
+    .contact-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 15px;
+    }
+
+    .contact-icon-wrapper i {
+        font-size: 1.5rem;
+    }
+
+    .contact-info-title {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .contact-info-text {
+        font-size: 0.85rem;
+    }
+
     .top-header .col-md-7, .top-header .col-md-5 {
         font-size: 12px;
     }
@@ -1324,6 +1406,53 @@
         width: 32px;
         height: 32px;
     }
+
+    /* 新闻详情内容响应式 */
+    .news-details-content {
+        padding: 20px 15px;
+        font-size: 0.95rem;
+    }
+
+  
+
+    .news-details-content img {
+        margin: 1.5rem auto;
+    }
+
+    /* 新闻导航响应式 */
+    .news-navigation {
+        padding: 20px 0;
+    }
+
+    .news-nav-link {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .news-nav-link .nav-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .prev-news .nav-arrow {
+        margin-right: 12px;
+    }
+
+    .next-news .nav-arrow {
+        margin-left: 12px;
+    }
+
+    .news-nav-link .nav-label {
+        font-size: 0.75rem;
+        margin-bottom: 5px;
+    }
+
+    .news-nav-link .nav-title {
+        font-size: 0.95rem;
+        line-height: 1.3;
+    }
+  
 }
 
 

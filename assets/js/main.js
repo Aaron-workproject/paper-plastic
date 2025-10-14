@@ -277,4 +277,80 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
     
+    // 视频分享功能
+    const shareFacebook = document.getElementById('share-facebook');
+    const shareX = document.getElementById('share-x');
+    const shareLinkedin = document.getElementById('share-linkedin');
+    const shareWhatsapp = document.getElementById('share-whatsapp');
+    const shareCopy = document.getElementById('share-copy');
+    
+    if (shareFacebook || shareX || shareLinkedin || shareWhatsapp || shareCopy) {
+        // 获取视频页面URL和标题
+        const videoUrl = window.location.href;
+        const videoTitle = document.querySelector('.video-detail-title') 
+            ? document.querySelector('.video-detail-title').textContent.trim() 
+            : 'Video';
+        
+        // Facebook分享
+        if (shareFacebook) {
+            shareFacebook.addEventListener('click', function() {
+                const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(videoUrl)}`;
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            });
+        }
+        
+        // X (Twitter)分享
+        if (shareX) {
+            shareX.addEventListener('click', function() {
+                const shareUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(videoUrl)}&text=${encodeURIComponent(videoTitle)}`;
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            });
+        }
+        
+        // LinkedIn分享
+        if (shareLinkedin) {
+            shareLinkedin.addEventListener('click', function() {
+                const shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(videoUrl)}&title=${encodeURIComponent(videoTitle)}`;
+                window.open(shareUrl, '_blank', 'width=600,height=400');
+            });
+        }
+        
+        // WhatsApp分享
+        if (shareWhatsapp) {
+            shareWhatsapp.addEventListener('click', function() {
+                const shareUrl = `https://wa.me/?text=${encodeURIComponent(videoTitle + ' ' + videoUrl)}`;
+                window.open(shareUrl, '_blank');
+            });
+        }
+        
+        // 复制链接
+        if (shareCopy) {
+            shareCopy.addEventListener('click', function() {
+                // 获取复制按钮元素
+                const copyButton = this;
+                const originalIcon = copyButton.innerHTML;
+                
+                // 创建一个临时输入框
+                const tempInput = document.createElement('input');
+                tempInput.value = videoUrl;
+                document.body.appendChild(tempInput);
+                
+                // 选择并复制文本
+                tempInput.select();
+                document.execCommand('copy');
+                
+                // 移除临时输入框
+                document.body.removeChild(tempInput);
+                
+                // 更改按钮图标为对号
+                copyButton.innerHTML = '<i class="bi bi-check-lg"></i>';
+                
+                // 2秒后恢复原始图标
+                setTimeout(function() {
+                    copyButton.innerHTML = originalIcon;
+                }, 2000);
+            });
+        }
+    }
+    
 });
