@@ -208,4 +208,42 @@ document.addEventListener('DOMContentLoaded', function() {
             modalImage.alt = position;
         });
     }
+    
+    // 产品工作流程交互功能
+    const processSteps = document.querySelectorAll('.process-step-item');
+    const processImages = document.querySelectorAll('.process-image-item');
+    const indicatorDots = document.querySelectorAll('.indicator-dot');
+    
+    // 切换流程步骤和图片的函数
+    function switchProcess(processNumber) {
+        // 移除所有活动状态
+        processSteps.forEach(step => step.classList.remove('active'));
+        processImages.forEach(img => img.classList.remove('active'));
+        indicatorDots.forEach(dot => dot.classList.remove('active'));
+        
+        // 添加活动状态到对应元素
+        const targetStep = document.querySelector(`.process-step-item[data-process="${processNumber}"]`);
+        const targetImage = document.querySelector(`.process-image-item[data-image="${processNumber}"]`);
+        const targetDot = document.querySelector(`.indicator-dot[data-indicator="${processNumber}"]`);
+        
+        if (targetStep) targetStep.classList.add('active');
+        if (targetImage) targetImage.classList.add('active');
+        if (targetDot) targetDot.classList.add('active');
+    }
+    
+    // 点击流程步骤切换
+    processSteps.forEach(step => {
+        step.addEventListener('click', function() {
+            const processNumber = this.getAttribute('data-process');
+            switchProcess(processNumber);
+        });
+    });
+    
+    // 点击圆点指示器切换
+    indicatorDots.forEach(dot => {
+        dot.addEventListener('click', function() {
+            const indicatorNumber = this.getAttribute('data-indicator');
+            switchProcess(indicatorNumber);
+        });
+    });
 });

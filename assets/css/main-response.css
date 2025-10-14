@@ -311,6 +311,50 @@
     .team-image-container {
         height: 250px;
     }
+    
+    /* 产品工作流程响应式 */
+ 
+    
+    .process-main-title {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
+    }
+    
+    .process-steps-container {
+        padding: 25px 20px;
+        margin-bottom: 30px;
+    }
+    
+    .process-step-item {
+        padding: 12px 15px;
+        margin-bottom: 12px;
+    }
+    
+    .step-number {
+        font-size: 1rem;
+    }
+    
+    .step-description {
+        font-size: 0.85rem;
+    }
+    
+    .process-image-wrapper {
+        min-height: 350px;
+    }
+    
+    .process-indicators {
+        bottom: 15px;
+        padding: 6px 15px;
+    }
+    
+    .indicator-dot {
+        width: 9px;
+        height: 9px;
+    }
+    
+    .indicator-dot.active {
+        width: 25px;
+    }
 }
 @media (max-width: 767px) {
     /* 关于我们页面-图片响应式 */
@@ -896,6 +940,57 @@
     
     .product-actions .btn:last-child {
         margin-bottom: 0;
+    }
+    
+    /* 产品工作流程响应式 */
+   
+    
+    .process-main-title {
+        font-size: 1.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .process-steps-container {
+        padding: 20px 15px;
+        margin-bottom: 25px;
+    }
+    
+    .process-step-item {
+        padding: 10px 12px;
+        margin-bottom: 10px;
+    }
+    
+    .step-number {
+        font-size: 0.95rem;
+        margin-bottom: 6px;
+    }
+    
+    .step-description {
+        font-size: 0.8rem;
+        line-height: 1.5;
+    }
+    
+    .process-image-display {
+        padding: 15px;
+    }
+    
+    .process-image-wrapper {
+        min-height: 280px;
+    }
+    
+    .process-indicators {
+        bottom: 12px;
+        gap: 8px;
+        padding: 5px 12px;
+    }
+    
+    .indicator-dot {
+        width: 8px;
+        height: 8px;
+    }
+    
+    .indicator-dot.active {
+        width: 22px;
     }
 }
 
