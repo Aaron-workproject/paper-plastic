@@ -619,6 +619,29 @@ a:hover{
     z-index: 2;
 }
 
+.news-date-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(5px);
+    padding: 6px 12px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #333;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+.news-date-badge i {
+    font-size: 0.9rem;
+    color: var(--accent-color);
+}
+
 .featured-news-content {
     padding: 30px;
     flex: 1;
@@ -2821,7 +2844,7 @@ a:hover{
     padding: 20px;
 }
 
-.video-title {
+.video-title, .news-list-title {
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 0;
@@ -2994,5 +3017,18 @@ a:hover{
     color: #fff;
     transform: translateY(-3px);
 }
+
+
+/* 新闻列表链接 */
+a.news-list-link {
+   color: var(--accent-color)!important;
+   transition: all 0.3s ease;
+}
+
+.news-list-link:hover,.news-list-link:hover i{
+    color: var(--hover-color)!important;
+    transform: translateY(-3px);
+}
+
 
 

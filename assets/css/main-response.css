@@ -746,6 +746,18 @@
         left: 15px;
     }
 
+    .news-date-badge {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        bottom: 12px;
+        left: 12px;
+        gap: 5px;
+    }
+
+    .news-date-badge i {
+        font-size: 0.85rem;
+    }
+
     .news-list {
         gap: 15px;
     }
