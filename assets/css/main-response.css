@@ -1606,29 +1606,42 @@
         font-size: 0.8rem;
     }
     
-    /* 单个视频详情页响应式 */
-    .single-videos-details {
-        padding: 30px 0;
+    /* 案例详情页响应式 */
+    .case-overview-section {
+        margin-bottom: 35px;
     }
     
-    .video-detail-title {
-        font-size: 1.8rem;
+    .case-overview-info {
+        padding: 30px 25px;
+    }
+    
+    .case-overview-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        padding-bottom: 12px;
+    }
+    
+    .case-info-item {
         margin-bottom: 15px;
+        padding-bottom: 15px;
     }
     
-    .video-meta-info {
-        padding: 12px 0;
-    }
-    
-    .video-tag {
-        padding: 3px 10px;
+    .info-label {
         font-size: 0.8rem;
+        margin-bottom: 6px;
     }
     
-    .share-link {
-        width: 32px;
-        height: 32px;
+    .info-value {
+        font-size: 1rem;
     }
+    
+    /* 案例详情内容响应式 */
+    .case-details-content {
+        font-size: 0.95rem;
+        
+    }
+    
+    
     
     /* 案例列表响应式（移动端）*/
     .case-card {
@@ -1666,6 +1679,50 @@
         padding: 8px 20px;
         font-size: 0.85rem;
     }
+    
+    /* 案例详情页响应式（移动端）*/
+    .case-overview-section {
+        margin-bottom: 30px;
+    }
+    
+    .case-main-image {
+        margin-bottom: 20px;
+        border-radius: 8px;
+    }
+    
+    .case-overview-info {
+        padding: 25px 20px;
+        border-radius: 8px;
+    }
+    
+    .case-overview-title {
+        font-size: 1.2rem;
+        margin-bottom: 18px;
+        padding-bottom: 10px;
+    }
+    
+    .case-info-item {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+    }
+    
+    .info-label {
+        font-size: 0.75rem;
+        margin-bottom: 5px;
+    }
+    
+    .info-value {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    
+    /* 案例详情内容响应式（移动端）*/
+    .case-details-content {
+        font-size: 0.9rem;
+        
+    }
+    
+   
 
     /* 新闻详情内容响应式 */
     .news-details-content {
