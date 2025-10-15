@@ -101,7 +101,7 @@ document.addEventListener('DOMContentLoaded', function() {
             // 为当前点击的模块添加活动状态
             this.classList.add('active');
             
-            // 显示对应的流程步骤内容
+            // 显示对应的流程步骤内容（右侧图片）
             const flowSteps = document.querySelectorAll(`.flow-step[data-module="${moduleType}"]`);
             
             document.querySelectorAll('.flow-step').forEach(step => {
@@ -111,6 +111,18 @@ document.addEventListener('DOMContentLoaded', function() {
             flowSteps.forEach(step => {
                 step.classList.add('active');
             });
+            
+            // 显示对应的文字内容（左侧文字）
+            const industryContents = document.querySelectorAll('.industry-content');
+            
+            industryContents.forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            const targetContent = document.querySelector(`.industry-content[data-module="${moduleType}"]`);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
         });
     });
     
@@ -123,11 +135,18 @@ document.addEventListener('DOMContentLoaded', function() {
             firstModule.classList.add('active');
             
             const moduleType = firstModule.getAttribute('data-module');
-            const flowSteps = document.querySelectorAll(`.flow-step[data-module="${moduleType}"]`);
             
+            // 激活对应的流程步骤图片
+            const flowSteps = document.querySelectorAll(`.flow-step[data-module="${moduleType}"]`);
             flowSteps.forEach(step => {
                 step.classList.add('active');
             });
+            
+            // 激活对应的左侧文字内容
+            const targetContent = document.querySelector(`.industry-content[data-module="${moduleType}"]`);
+            if (targetContent) {
+                targetContent.classList.add('active');
+            }
         }
     });
     
