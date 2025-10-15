@@ -1581,12 +1581,29 @@
         font-size: 2.5rem;
     }
     
-    .video-content {
-        padding: 15px;
+    /* 案例列表响应式 */
+    .case-card {
+        border-radius: 10px;
     }
     
-    .video-title {
-        font-size: 1rem;
+    .case-content {
+        padding: 20px;
+    }
+    
+    .case-title {
+        font-size: 1.05rem;
+        margin-bottom: 10px;
+    }
+    
+    .case-excerpt {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .case-location,
+    .case-date {
+        padding: 5px 12px;
+        font-size: 0.8rem;
     }
     
     /* 单个视频详情页响应式 */
@@ -1611,6 +1628,43 @@
     .share-link {
         width: 32px;
         height: 32px;
+    }
+    
+    /* 案例列表响应式（移动端）*/
+    .case-card {
+        margin-bottom: 20px;
+    }
+    
+    .case-content {
+        padding: 18px;
+    }
+    
+    .case-title {
+        font-size: 1rem;
+        margin-bottom: 8px;
+    }
+    
+    .case-excerpt {
+        font-size: 0.85rem;
+        margin-bottom: 12px;
+        line-height: 1.5;
+    }
+    
+    .case-location,
+    .case-date {
+        padding: 4px 10px;
+        font-size: 0.75rem;
+        gap: 4px;
+    }
+    
+    .case-location i,
+    .case-date i {
+        font-size: 0.8rem;
+    }
+    
+    .case-view-btn {
+        padding: 8px 20px;
+        font-size: 0.85rem;
     }
 
     /* 新闻详情内容响应式 */
