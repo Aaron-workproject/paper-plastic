@@ -655,21 +655,6 @@
         letter-spacing: 1px;
     }
     
-    .top-header .row {
-        text-align: center;
-    }
-    
-    .top-header .col-md-5 {
-        text-align: center;
-        margin-top: 5px;
-    }
-    
-    .top-header .contact-info {
-        display: inline-block;
-        margin: 5px 10px;
-    }
-
-    
     .banner-content h1 {
         font-size: 2rem;
     }
@@ -828,9 +813,6 @@
         font-size: 0.8rem;
     }
 
-    .top-header .col-md-7, .top-header .col-md-5 {
-        font-size: 12px;
-    }
     .home_banner {
         height: 70vh;
     }

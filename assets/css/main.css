@@ -40,32 +40,6 @@ a{
 a:hover{
     color: var(--hover-color)!important;
 }
-/* 顶部联系通栏样式 */
-.top-header {
-    background-color: var(--bg-header);
-    color: var(--text-light);
-    padding: 10px 0;
-    font-size: 14px;
-}
-
-.top-header .tagline {
-    font-weight: 500;
-}
-
-.top-header .bi-recycle {
-    color: var(--accent-color);
-}
-
-.top-header .contact-info {
-    display: inline-flex;
-    align-items: center;
-}
-
-.top-header .bi-telephone-fill,
-.top-header .bi-envelope-fill {
-    color: var(--accent-color);
-}
-
 /* 主导航样式 */
 .main-header {
     background-color: var(--accent-color);
