@@ -3101,11 +3101,7 @@ a.news-list-link {
 
 
 /* 新闻上一篇下一篇导航 */
-.news-navigation {
-    padding: 40px 0;
-    margin-top: 30px;
-    border-top: 1px solid #e5e5e5;
-}
+
 
 .news-nav-link {
     display: flex;
