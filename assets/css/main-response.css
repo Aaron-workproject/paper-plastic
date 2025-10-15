@@ -204,57 +204,30 @@
         font-size: 2.4rem;
     }
 
-    /* 应用场景展示响应式 */
-    .application_showcase {
-        padding: 60px 0;
+    /* 证书展示区域响应式 */
+    .company-cert-showcase {
+        padding: 20px 0 40px 0;
     }
 
-    .applications-title {
-        font-size: 2.4rem;
+    .cert-image-container {
+        margin-bottom: 30px;
     }
 
-    .applications-subtitle {
-        font-size: 1.1rem;
+    .cert-content {
+        padding: 20px 15px;
     }
 
-    .app-card {
-        height: 260px;
-    }
-
-    .app-card-icon {
-        width: 60px;
-        height: 60px;
-    }
-
-    .app-card-icon i {
+    .cert-main-title {
         font-size: 2.5rem;
     }
 
-    .app-card-title {
-        font-size: 1.3rem;
+    .cert-description {
+        font-size: 1rem;
     }
 
-    .app-card-hover {
-        padding: 30px 25px;
-    }
-
-    .app-hover-icon {
-        width: 50px;
-        height: 50px;
-        margin-bottom: 15px;
-    }
-
-    .app-hover-icon i {
-        font-size: 2.2rem;
-    }
-
-    .app-hover-title {
-        font-size: 1.25rem;
-        margin-bottom: 12px;
-    }
-
-    .app-hover-description {
-        font-size: 0.95rem;
+    .btn-cert-cta {
+        padding: 14px 30px;
+        font-size: 1rem;
     }
 
     /* 关于我们展示区域响应式 */
@@ -278,7 +251,7 @@
 
     /* 新闻展示区域响应式 */
     .paper-plastic-news-showcase {
-        padding: 60px 0;
+        padding: 40px 0;
     }
 
     .news-section-title {
@@ -874,60 +847,31 @@
         font-size: 1rem;
     }
 
-    /* 应用场景展示响应式 - 小屏幕 */
-    .application_showcase {
-        padding: 50px 0;
+    /* 证书展示区域响应式 - 小屏幕 */
+    .company-cert-showcase {
+        padding: 20px 0 40px 0;
     }
 
-    .applications-title {
+    .cert-content {
+        padding: 10px;
+    }
+
+    .cert-main-title {
         font-size: 2rem;
+        margin-bottom: 25px;
     }
 
-    .applications-subtitle {
-        font-size: 1rem;
+    .cert-description {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 25px;
     }
 
-    .app-card {
-        height: 240px;
-    }
-
-    .app-card-icon {
-        width: 55px;
-        height: 55px;
-    }
-
-    .app-card-icon i {
-        font-size: 2.2rem;
-    }
-
-    .app-card-title {
-        font-size: 1.2rem;
-    }
-
-    .app-card-hover {
-        padding: 25px 20px;
-    }
-
-    .app-hover-icon {
-        width: 45px;
-        height: 45px;
-        margin-bottom: 12px;
-    }
-
-    .app-hover-icon i {
-        font-size: 2rem;
-    }
-
-    .app-hover-title {
-        font-size: 1.15rem;
-        margin-bottom: 10px;
-        padding-bottom: 8px;
-        border-bottom-width: 2px;
-    }
-
-    .app-hover-description {
-        font-size: 0.9rem;
-        line-height: 1.5;
+    .btn-cert-cta {
+        padding: 13px 28px;
+        font-size: 0.95rem;
+        width: 100%;
+        justify-content: center;
     }
 
     /* 关于我们展示区域响应式 - 小屏幕 */
@@ -969,7 +913,7 @@
 
     /* 新闻展示区域响应式 - 小屏幕 */
     .paper-plastic-news-showcase {
-        padding: 50px 0;
+        padding: 40px 0;
     }
 
     .news-section-title {
