@@ -387,17 +387,19 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // GET QUOTE按钮点击跳转到询价表单
-    const getQuoteBtn = document.querySelector('.pro_btn');
-    if (getQuoteBtn) {
-        getQuoteBtn.addEventListener('click', function(e) {
-            e.preventDefault();
-            const inquiryForm = document.getElementById('inquiryForm');
-            if (inquiryForm) {
-                inquiryForm.scrollIntoView({ 
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
+    const getQuoteBtns = document.querySelectorAll('.pro_btn, .btn-cta-quote');
+    if (getQuoteBtns.length > 0) {
+        getQuoteBtns.forEach(function(btn) {
+            btn.addEventListener('click', function(e) {
+                e.preventDefault();
+                const inquiryForm = document.getElementById('inquiryForm');
+                if (inquiryForm) {
+                    inquiryForm.scrollIntoView({ 
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
         });
     }
     
