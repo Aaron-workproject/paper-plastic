@@ -353,4 +353,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
+    // GET QUOTE按钮点击跳转到询价表单
+    const getQuoteBtn = document.querySelector('.pro_btn');
+    if (getQuoteBtn) {
+        getQuoteBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            const inquiryForm = document.getElementById('inquiryForm');
+            if (inquiryForm) {
+                inquiryForm.scrollIntoView({ 
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    }
+    
 });

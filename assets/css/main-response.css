@@ -70,7 +70,7 @@
         font-size: 1.05rem;
     }
 
-    .step-description {
+    .lines-step-description {
         font-size: 0.9rem;
     }
 
@@ -618,7 +618,7 @@
         margin-bottom: 20px;
     }
 
-    .step-number {
+    .lines-step-number {
         width: 35px;
         height: 35px;
         font-size: 1rem;
@@ -810,7 +810,7 @@
         margin-bottom: 18px;
     }
 
-    .step-number {
+    .lines-step-number {
         width: 32px;
         height: 32px;
         font-size: 0.95rem;
@@ -824,7 +824,7 @@
         font-size: 0.95rem;
     }
 
-    .step-description {
+    .lines-step-description {
         font-size: 0.8rem;
     }
 

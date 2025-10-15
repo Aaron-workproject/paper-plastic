@@ -306,11 +306,41 @@ a:hover{
     position: relative;
     height: 280px;
     border-radius: 12px;
-    overflow: hidden;
     cursor: pointer;
+    perspective: 1000px;
+}
+
+.app-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.app-card:hover .app-card-inner {
+    transform: rotateY(180deg);
+}
+
+.app-card-front,
+.app-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.app-card-front {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.app-card-back {
+    background: var(--accent-color);
+    transform: rotateY(180deg);
 }
 
 .app-card-overlay {
@@ -320,12 +350,7 @@ a:hover{
     right: 0;
     bottom: 0;
     background: linear-gradient(135deg, rgb(119, 189, 90,0.75),rgb(246, 171, 0,0.75));
-    transition: all 0.4s ease;
     z-index: 1;
-}
-
-.app-card:hover .app-card-overlay {
-    background: var(--accent-color);
 }
 
 .app-card-content {
@@ -339,11 +364,6 @@ a:hover{
     align-items: center;
     justify-content: center;
     z-index: 2;
-    transition: opacity 0.4s ease;
-}
-
-.app-card:hover .app-card-content {
-    opacity: 0;
 }
 
 .app-card-icon {
@@ -369,7 +389,6 @@ a:hover{
     padding: 0 20px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    
 }
 
 .app-card-hover {
@@ -383,13 +402,7 @@ a:hover{
     align-items: flex-start;
     justify-content: flex-start;
     padding: 35px 30px;
-    z-index: 3;
-    opacity: 0;
-    transition: opacity 0.4s ease;
-}
-
-.app-card:hover .app-card-hover {
-    opacity: 1;
+    z-index: 2;
 }
 
 .app-hover-icon {
@@ -413,14 +426,12 @@ a:hover{
     margin: 0 0 15px 0;
     text-transform: uppercase;
     letter-spacing: 1px;
-   
     border-bottom: 3px solid #ffffff;
     padding-bottom: 10px;
     display: inline-block;
 }
 
 .app-hover-description {
-   
     color: #ffffff;
     line-height: 1.6;
     margin: 0;
@@ -617,29 +628,6 @@ a:hover{
     display: flex;
     align-items: center;
     z-index: 2;
-}
-
-.news-date-badge {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(5px);
-    padding: 6px 12px;
-    border-radius: 6px;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 0.85rem;
-    font-weight: 500;
-    color: #333;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-    z-index: 2;
-}
-
-.news-date-badge i {
-    font-size: 0.9rem;
-    color: var(--accent-color);
 }
 
 .featured-news-content {
@@ -2205,7 +2193,16 @@ a:hover{
     transform: translateY(-5px);
 }
 
-
+.solution-video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    background-color: #000;
+    margin-bottom: 20px;
+}
 
 .solution-video {
     position: absolute;
@@ -2630,7 +2627,7 @@ a:hover{
 }
 
 .btn-inquiry {
-    background-color: #0066cc;
+    background-color: var(--accent-color);
     color: #ffffff;
     padding: 12px 40px;
     font-size: 1rem;
@@ -2646,9 +2643,14 @@ a:hover{
 }
 
 .btn-inquiry:hover {
-    background-color: #0052a3;
+    background-color: var(--hover-color);
+    color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 102, 204, 0.3);
+}
+
+.btn-inquiry:hover i {
+    color: #ffffff;
 }
 
 .btn-inquiry i {
@@ -3025,7 +3027,7 @@ a.news-list-link {
 .news-details-content {
     
     margin: 0 auto;
-    padding: 30px 0;
+   
     font-size: 1rem;
     line-height: 1.8;
     color: #333;
@@ -3422,7 +3424,7 @@ a.news-list-link {
     background: linear-gradient(180deg, var(--accent-color), transparent);
 }
 
-.step-number {
+.lines-step-number {
     flex-shrink: 0;
     width: 40px;
     height: 40px;
@@ -3448,7 +3450,7 @@ a.news-list-link {
     margin-bottom: 8px;
 }
 
-.step-description {
+.lines-step-description {
     font-size: 0.95rem;
     color: #666;
     line-height: 1.6;
