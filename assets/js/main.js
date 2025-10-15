@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // 首页导航栏滚动透明效果
+    const homeHeader = document.querySelector('.home-header');
+    const mainHeader = document.querySelector('.main-header');
+    
+    if (homeHeader && mainHeader) {
+        window.addEventListener('scroll', function() {
+            if (window.scrollY > 50) {
+                mainHeader.classList.add('scrolled');
+            } else {
+                mainHeader.classList.remove('scrolled');
+            }
+        });
+    }
+    
     // 产品详情页缩略图切换功能
     const thumbnailItems = document.querySelectorAll('.thumbnail-item');
     

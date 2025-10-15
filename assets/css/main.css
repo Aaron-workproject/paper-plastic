@@ -44,6 +44,52 @@ a:hover{
 .main-header {
     background-color: var(--accent-color);
     padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 首页导航初始透明状态 */
+.home-header .main-header {
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: none;
+}
+
+
+
+.home-header .main-header .contact-btn {
+    color: var(--text-light) !important;
+}
+
+/* 首页导航滚动后显示背景 */
+.home-header .main-header.scrolled {
+    background-color: var(--accent-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 首页滚动后的导航链接颜色恢复正常 */
+.home-header .main-header.scrolled .nav-link,
+.home-header .main-header.scrolled .contact-btn {
+    color: var(--text-light) !important;
+}
+
+/* 为fixed导航留出空间 */
+body {
+    padding-top: 70px;
+}
+
+/* 首页不需要padding，让banner从顶部开始 */
+.home-header ~ main,
+body:has(.home-header) {
+    padding-top: 0;
+}
+
+.home_banner {
+    margin-top: 0;
 }
 
 .main-header .navbar {

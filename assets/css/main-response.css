@@ -124,6 +124,17 @@
     .data-item {
         padding: 35px 15px;
     }
+    
+    /* 响应式下固定导航 */
+    body {
+        padding-top: 65px;
+    }
+    
+    /* 首页不需要padding */
+    body:has(.home-header) {
+        padding-top: 0;
+    }
+    
     .navbar-collapse {
         background-color: #ffffff;
         position: absolute;
@@ -145,6 +156,11 @@
         display: block;
         text-align: center;
         padding: 15px !important;
+        color: var(--accent-color) !important;
+    }
+    
+    /* 首页透明状态下的移动端菜单链接颜色 */
+    .home-header .navbar-collapse .nav-link {
         color: var(--accent-color) !important;
     }
     
@@ -811,6 +827,16 @@
 
     .lines-step-description {
         font-size: 0.8rem;
+    }
+    
+    /* 小屏幕固定导航 */
+    body {
+        padding-top: 60px;
+    }
+    
+    /* 首页不需要padding */
+    body:has(.home-header) {
+        padding-top: 0;
     }
 
     .home_banner {
