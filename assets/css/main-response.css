@@ -27,6 +27,53 @@
         font-size: 0.95rem;
     }
 
+    /* 联系我们页面表单区域响应式 */
+    .contact-form-image-wrapper {
+        min-height: 400px;
+        margin-bottom: 30px;
+    }
+
+    /* 联系我们页面地图区域响应式 */
+    .map-container {
+        height: 500px;
+    }
+
+    /* 联系我们页面来访路线响应式 */
+  
+
+    .visit-route-title {
+        font-size: 2.2rem;
+    }
+
+    .visit-route-subtitle {
+        font-size: 1rem;
+    }
+
+    .route-card {
+        padding: 35px;
+    }
+
+    .route-icon-wrapper {
+        width: 70px;
+        height: 70px;
+    }
+
+    .route-icon-wrapper i {
+        font-size: 2rem;
+    }
+
+    .route-title {
+        font-size: 1.6rem;
+    }
+
+    .step-title {
+        font-size: 1.05rem;
+    }
+
+    .step-description {
+        font-size: 0.9rem;
+    }
+
     /* 关于我们页面-图片响应式 */
     .about-image-container {
         padding-bottom: 80%;
@@ -526,6 +573,75 @@
         font-size: 0.9rem;
     }
 
+    /* 联系我们页面表单区域响应式 */
+    .contact-form-image-wrapper {
+        min-height: 350px;
+    }
+
+    /* 联系我们页面地图区域响应式 */
+    .map-container {
+        height: 450px;
+    }
+
+    /* 联系我们页面来访路线响应式 */
+  
+
+    .visit-route-title {
+        font-size: 2rem;
+    }
+
+    .visit-route-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .route-card {
+        padding: 30px;
+        margin-bottom: 20px;
+    }
+
+    .route-icon-wrapper {
+        width: 65px;
+        height: 65px;
+    }
+
+    .route-icon-wrapper i {
+        font-size: 1.8rem;
+    }
+
+    .route-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+
+    .route-step {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .step-number {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .route-step:not(:last-child)::after {
+        left: 17px;
+    }
+
+    .step-title {
+        font-size: 1rem;
+    }
+
+    .step-description {
+        font-size: 0.85rem;
+    }
+
+    .route-info {
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+    }
+
     /* 关于我们页面-图片响应式 */
     .about-image-container {
         padding-bottom: 85%;
@@ -647,6 +763,69 @@
 
     .contact-info-text {
         font-size: 0.85rem;
+    }
+
+    /* 联系我们页面表单区域响应式 */
+    .contact-form-image-wrapper {
+        min-height: 300px;
+    }
+
+    /* 联系我们页面地图区域响应式 */
+    .map-container {
+        height: 400px;
+    }
+
+    /* 联系我们页面来访路线响应式 */
+ 
+
+    .visit-route-title {
+        font-size: 1.8rem;
+    }
+
+    .visit-route-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .route-card {
+        padding: 25px;
+    }
+
+    .route-icon-wrapper {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 20px;
+    }
+
+    .route-icon-wrapper i {
+        font-size: 1.6rem;
+    }
+
+    .route-title {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+
+    .route-step {
+        gap: 12px;
+        margin-bottom: 18px;
+    }
+
+    .step-number {
+        width: 32px;
+        height: 32px;
+        font-size: 0.95rem;
+    }
+
+    .route-step:not(:last-child)::after {
+        left: 15px;
+    }
+
+    .step-title {
+        font-size: 0.95rem;
+    }
+
+    .step-description {
+        font-size: 0.8rem;
     }
 
     .top-header .col-md-7, .top-header .col-md-5 {
