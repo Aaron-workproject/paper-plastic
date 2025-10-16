@@ -807,7 +807,7 @@ body:has(.home-header) {
 
 .solution-flow-wrapper {
     overflow-x: auto;
-    padding: 20px 0;
+   
     scrollbar-width: none;
     -ms-overflow-style: none;
 }
@@ -825,9 +825,9 @@ body:has(.home-header) {
 }
 
 .solution-module {
-    width: 160px;
+    width: 180px;
     text-align: center;
-    padding: 20px 15px 30px;
+    padding: 60px 15px 70px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
