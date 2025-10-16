@@ -1046,15 +1046,7 @@
         font-size: 0.9rem;
     }
 
-    .footer-social {
-        gap: 10px;
-    }
 
-    .social-link {
-        width: 38px;
-        height: 38px;
-        font-size: 1rem;
-    }
 
     .footer-links a,
     .footer-contact li {

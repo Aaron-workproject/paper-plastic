@@ -1070,53 +1070,7 @@ body:has(.home-header) {
     border-radius: 2px;
 }
 
-/* 社交媒体链接 */
-.footer-social {
-    display: flex;
-    gap: 12px;
-}
 
-.social-link {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 50%;
-    color: #ffffff;
-    font-size: 1.1rem;
-    transition: all 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.social-link:hover {
-    background-color: var(--accent-color);
-    color: #ffffff;
-    transform: translateY(-3px);
-    border-color: var(--accent-color);
-    box-shadow: 0 5px 15px rgba(119, 189, 90, 0.4);
-}
-
-.social-link:nth-child(2):hover {
-    background-color: #1DA1F2;
-    border-color: #1DA1F2;
-}
-
-.social-link:nth-child(3):hover {
-    background-color: #0A66C2;
-    border-color: #0A66C2;
-}
-
-.social-link:nth-child(4):hover {
-    background-color: #FF0000;
-    border-color: #FF0000;
-}
-
-.social-link:nth-child(5):hover {
-    background-color: #E4405F;
-    border-color: #E4405F;
-}
 
 /* 快速链接 */
 .footer-links {
